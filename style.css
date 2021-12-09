@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "sondos";
+    src: url("fonts/22876-gen01.ttf")
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    font-family:sondos;
+    color: white;
+    width: 100vw;
+    scroll-behavior: smooth;
+
+}
+
+.allcontent {
+    height: 100vh;
+    width: 100vw;
+    /* margin: 5rem auto; */
+    background: url("imges/bgA.jpg");
+    position: relative;
+    background-size: cover;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+}
+.title{
+    text-align: center; 
+    font-family:sondos;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.audioelement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 110px;
+    border: solid 10px rgb(31, 31, 31);
+    background-color: rgb(128, 128, 128);
+    margin: 10px;
+}
+select {
+    /* background-color: rgb(128, 128, 128); */
+    background-color: gold;
+    border: none;
+}
+
+.played {
+    border: solid 10px gold !important;
+    color: gold !important;
+}
+
+.audios {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    color: rgb(68, 67, 67);
+}
+
+.audios i {
+    font-size: 30px;
+}
+
+.audios p {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+audio {
+    display: none;
+}
+
+.arb {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    animation: moveright 10s linear infinite;
+
+}
+
+.taxi {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    animation: movetaxi 10s linear infinite;
+    margin-bottom: 29px;
+}
+.camion {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    animation: movecamion 10s linear infinite;
+
+}
+.daciacar{
+    position: absolute;
+    bottom: 0;
+    bottom: 23px;
+    animation: movedacia 10s linear infinite;
+}
+.arb-two {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    align-items: flex-end;
+    bottom: 0;
+    animation: moveright 10s linear infinite;
+
+}
+
+.arb-two img {
+    margin-left: 50px;
+
+}
+
+.rouad {
+    height: 30px;
+    width: 100vw;
+    background-color: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: moveright 6s linear infinite; */
+}
+
+
+@keyframes moveright {
+    100% {
+        transform: translateX(-2950px);
+    }
+
+}
+
+@keyframes movetaxi {
+    0% {
+        right: 50%;
+    }
+
+    25% {
+        right: 30%;
+    }
+
+    75% {
+        right: 75%;
+        webkit-transform: scaleX(-1);
+    }
+
+    80% {
+        right: 60%;
+        webkit-transform: scaleX(-1);
+    }
+
+    90% {
+        right: 50%;
+        webkit-transform: scaleX(-1);
+    }
+
+    100% {
+        right: 50%;
+        webkit-transform: scaleX(-1);
+    }
+
+}
+
+@keyframes movecamion {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 0%;
+        webkit-transform: scaleX(-1);
+    }
+
+}
+@keyframes movedacia {
+    0% {
+        right: 70%;
+    }
+
+    25% {
+        right: 40%;
+    }
+
+    75% {
+        right: 30%;
+        webkit-transform: scaleX(-1);
+    }
+
+    80% {
+        right: 20%;
+        webkit-transform: scaleX(-1);
+    }
+
+    90% {
+        right: 10%;
+        webkit-transform: scaleX(-1);
+    }
+
+    100% {
+        right: 0%;
+        webkit-transform: scaleX(-1);
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .audioelement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 85px;
+        height: 66px;
+        border-radius: 0px;
+        border: solid 10px rgb(31, 31, 31);
+        background-color: rgb(128, 128, 128);
+        margin: 3px;
+    }
+    .sec1 img{
+        width: 80vw;
+    }
+    .list{
+        direction: rtl;
+        width: 90vw;
+    
+    }
+    .diagnos{
+
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+    }
+    @keyframes movecamion {
+        0% {
+            left: 50%;
+        }
+    
+        100% {
+            left: 0%;
+            webkit-transform: scaleX(-1);
+        }
+    
+    }
+    @keyframes movetaxi {
+        0% {
+            right: 10%;
+        }
+
+        25% {
+            right: 25%;
+        }
+
+        75% {
+            right: 10%;
+            webkit-transform: scaleX(-1);
+        }
+
+        80% {
+            right: 25%;
+            webkit-transform: scaleX(-1);
+        }
+
+        90% {
+            right: 16%;
+            webkit-transform: scaleX(-1);
+        }
+
+        100% {
+            right: 10%;
+            webkit-transform: scaleX(-1);
+        }
+
+    }
+
+
+}

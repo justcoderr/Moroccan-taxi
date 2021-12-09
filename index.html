@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://image.freepik.com/vecteurs-libre/service-taxi_24908-60897.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi</title>
+</head>
+
+<body>
+    <audio src="audios/driving-car-sound-effect-inside.mp3"></audio>
+    <audio src="audios/mol-rbaamy-hhhhhhhhh.mp3"></audio>
+    <audio src="audios/zay-elhawashort-version-abdel-halim-hafez-zy-alhoa-aabd-alhlym-hafth.mp3"></audio>
+    <audio src="audios/khrybk-larbaa-hhhh.mp3"></audio>
+    <audio src="audios/effetto-sonoro-clacson-auto.mp3"></audio>
+    <div class="allcontent">
+        <div class="audios">
+            <div onclick="TaxiSond()" id="taxi-btn" class=" audioelement">
+                <i class="fas fa-car"></i>
+                <p>Car Sound</p>
+            </div>
+            <div id="pssen-btn" onclick="PassengersSond()" class="audioelement">
+                <i class="fas fa-users"></i>
+                <p>Passengers Sound</p>
+            </div>
+            <div id="music-btn" onclick="music()" class="audioelement">
+                <i class="fas fa-music"></i>
+                <p>Music</p>
+            </div>
+            <div id="taxi-playlist" onchange="changeMusic()" class="audioelement played">
+                <p>Select Music</p>
+                <select style="margin-top: 5px;" id="select">
+                    <option value="zay-elhawashort-version-abdel-halim-hafez-zy-alhoa-aabd-alhlym-hafth.mp3">Abdelhalim
+                    </option>
+                    <option value="abdelaziz-stati-el-ghaba-aabd-alaazyz-alstaty.mp3">Stati</option>
+                    <option value="statut-whatsapp-2021-cheb-bilal-kol-wa7d-y3ref-9dro.mp3">
+                        Billal</option>
+                </select>
+            </div>
+
+            <div id="clacson-btn" onclick="clacson()" class="audioelement">
+                <i class="fal fa-volume-up"></i>
+                <p>clacson</p>
+            </div>
+            <div id="call-btn" onclick="callPassengers()" class="audioelement">
+                <i class="fas fa-male"></i>
+                <p>call Passengers</p>
+            </div>
+        </div>
+        <div class="arb">
+            <!-- L -->
+            <img width="400" height="400" src="imges/5.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/2.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/house1.png" alt="" srcset="">
+            <img width="400" height="200" class="camion" src="imges/RichLegalLangur-size_restricted.gif" alt=""
+                srcset="">
+            <img width="400" height="400" src="imges/5.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/6.png" alt="" srcset="">
+            <img width="400" height="440" src="imges/h2.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/house1.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/3.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/house1.png" alt="" srcset="">
+            
+            <img width="400" height="400" src="imges/3.png" alt="" srcset="">
+
+        </div>
+        <img width="400" height="300" class="daciacar" src="imges/trn.png" alt="" srcset="">
+        <img class="taxi" width="300" height="250" src="imges/taxi.gif" alt="" srcset="">
+        <div class="arb-two">
+            <!-- R -->
+            <img width="400" height="400" src="imges/2.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/1.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/1.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/house1.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/1.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/4.png" alt="" srcset="">
+            <img width="400" height="400" src="imges/3.png" alt="" srcset="">
+            <!--  -->
+        </div>
+        <div class="rouad">
+        </div>
+        <h1 class="title">طاكسي كبير</h1>
+    </div>
+    
+    </div>
+    <script src="min.js"></script>
+</body>
+
+</html>
