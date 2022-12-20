@@ -8,6 +8,7 @@ body {
     /* overflow-y: hidden; */
     overflow-x: hidden;
     font-family:sondos;
+    user-select:none;
     color: white;
     width: 100vw;
     scroll-behavior: smooth;
